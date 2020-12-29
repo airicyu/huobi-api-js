@@ -126,7 +126,7 @@ async function run() {
     /*****
      * root user info
      */
-    const account = await hbApi.restApi({ path: `/v1/acco3unt/accounts`, method: 'GET' })
+    const account = await hbApi.restApi({ path: `/v1/account/accounts`, method: 'GET' })
     console.log('account:', { account })
 
     const subUsers = await hbApi.restApi({ path: `/v2/sub-user/user-list`, method: 'GET' })
